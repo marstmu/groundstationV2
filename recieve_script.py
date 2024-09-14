@@ -63,33 +63,3 @@ const PORT = 5000;
 server.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
 });
-
-
-
-
-html to display
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flight Data</title>
-    <script src="/socket.io/socket.io.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const socket = io();
-            const dataDiv = document.getElementById('data');
-
-            socket.on('data', (data) => {
-                dataDiv.innerHTML = `<p>Data: ${data.message}</p>`;
-            });
-        });
-    </script>
-</head>
-<body>
-    <h1>Flight Data</h1>
-    <div id="data">waiting for data...</div>
-</body>
-</html>
