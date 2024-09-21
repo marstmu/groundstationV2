@@ -7,6 +7,10 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      'sans': ['Inter', 'Verdana', 'Arial', 'sans-serif'],
+      'mono': ['Fira Code', 'monospace']
+    },
     extend: {
       colors: {
         background: "var(--background)",

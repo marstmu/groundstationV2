@@ -5,8 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be9d774f-0220-4a2c-a792-d8c6c733a978" name="Changes" comment="update">
+      <change afterPath="$PROJECT_DIR$/server/station/consumers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/telemetry/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/groundStationV2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/groundStationV2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recieve_script.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.venv/Scripts/activate" beforeDir="false" afterPath="$PROJECT_DIR$/server/.venv/Scripts/activate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.venv/Scripts/activate.bat" beforeDir="false" afterPath="$PROJECT_DIR$/server/.venv/Scripts/activate.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.venv/Scripts/activate.fish" beforeDir="false" afterPath="$PROJECT_DIR$/server/.venv/Scripts/activate.fish" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.venv/Scripts/activate.nu" beforeDir="false" afterPath="$PROJECT_DIR$/server/.venv/Scripts/activate.nu" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.venv/pyvenv.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/server/.venv/pyvenv.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/djangoTest/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/station/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/djangoTest/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/station/asgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/djangoTest/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/station/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/djangoTest/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/station/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/djangoTest/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/station/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/tailwind.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,27 +35,34 @@
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Rebase.Settings">
     <option name="NEW_BASE" value="origin/main" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "whois-kasper"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;whois-kasper&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="d5dbf7b0-5054-49f7-9b5f-d8a207a3e240" />
+    <option name="defaultAccountId" value="230331f5-9774-42b9-b45f-28969ea29a60" />
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/marstmu/groundstationV2",
-    "accountId": "d5dbf7b0-5054-49f7-9b5f-d8a207a3e240"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/marstmu/groundstationV2&quot;,
+    &quot;accountId&quot;: &quot;230331f5-9774-42b9-b45f-28969ea29a60&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 6
@@ -48,21 +74,36 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "Django Server.groundStationV2.executor": "Run",
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/Kasper/PycharmProjects/groundStationV2/server/djangoTest/settings.py",
+    "last_opened_file_path": "C:/Users/Kasper/PycharmProjects/groundstationV2/web/app",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "npm.dev.executor": "Run",
+    "settings.editor.selected.configurable": "CodeWithMe",
+    "ts.external.directory.path": "C:\\Users\\Kasper\\PycharmProjects\\groundstationV2\\web\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Kasper\PycharmProjects\groundstationV2\web\app" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Kasper\PycharmProjects\groundstationV2\web\app" />
+      <recent name="C:\Users\Kasper\PycharmProjects\groundstationV2\web" />
+      <recent name="C:\Users\Kasper\PycharmProjects\groundstationV2\server\station" />
+      <recent name="C:\Users\Kasper\PycharmProjects\groundstationV2\server" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Django Server.groundStationV2">
     <configuration name="groundStationV2" type="Python.DjangoServer" factoryName="Django server">
       <module name="groundStationV2" />
       <option name="ENV_FILES" value="" />
@@ -70,8 +111,10 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="station.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 (groundstationV2)" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -87,12 +130,31 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/web/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Django Server.groundStationV2" />
+      <item itemvalue="npm.dev" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-PY-242.21829.153" />
-        <option value="bundled-python-sdk-464836ebc622-b74155a9e76b-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.21829.153" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PY-242.22855.92" />
+        <option value="bundled-python-sdk-b068d85d1acf-399fe30bd8c1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.22855.92" />
       </set>
     </attachedChunks>
   </component>
@@ -108,6 +170,9 @@
       <workItem from="1726592317754" duration="625000" />
       <workItem from="1726618407292" duration="6218000" />
       <workItem from="1726793345568" duration="2204000" />
+      <workItem from="1726799557489" duration="189000" />
+      <workItem from="1726881215416" duration="142000" />
+      <workItem from="1726881363064" duration="17946000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />

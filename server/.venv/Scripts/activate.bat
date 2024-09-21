@@ -1,4 +1,4 @@
-@set "VIRTUAL_ENV=C:\Users\Kasper\PycharmProjects\djangoTest\.venv"
+@set "VIRTUAL_ENV=C:\Users\Kasper\PycharmProjects\groundStationV2\.venv"
 
 @set "VIRTUAL_ENV_PROMPT="
 @if NOT DEFINED VIRTUAL_ENV_PROMPT (

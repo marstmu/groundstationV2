@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'daphne',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -49,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'djangoTest.urls'
+ROOT_URLCONF = 'station.urls'
 
 TEMPLATES = [
     {
@@ -68,7 +69,14 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'groundStationV2.wsgi.application'
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': 'channels.layers.InMemoryChannelLayer',
+    },
+}
+
+WSGI_APPLICATION = 'station.wsgi.application'
+ASGI_APPLICATION = 'station.asgi.application'
 
 
 # Database

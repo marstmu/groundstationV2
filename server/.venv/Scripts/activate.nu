@@ -32,7 +32,7 @@ export-env {
       }
     }
 
-    let virtual_env = 'C:\Users\Kasper\PycharmProjects\djangoTest\.venv'
+    let virtual_env = 'C:\Users\Kasper\PycharmProjects\groundStationV2\.venv'
     let bin = 'Scripts'
 
     let is_windows = ($nu.os-info.family) == 'windows'
