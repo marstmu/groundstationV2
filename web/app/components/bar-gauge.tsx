@@ -8,5 +8,3 @@ const TextGauge = (props: ComponentProps<any>) => {
         </div>
     );
 }
-
-export default TextGauge;

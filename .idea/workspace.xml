@@ -4,10 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be9d774f-0220-4a2c-a792-d8c6c733a978" name="Changes" comment="created ground station website, configured django for channels">
-      <change afterPath="$PROJECT_DIR$/web/app/components/text-gauge.tsx" afterDir="false" />
+    <list default="true" id="be9d774f-0220-4a2c-a792-d8c6c733a978" name="Changes" comment="update">
+      <change afterPath="$PROJECT_DIR$/web/app/components/bar-gauge.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/components/window.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/public/test-map.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/components/text-gauge.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/components/text-gauge.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/app/telemetry/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/telemetry/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,14 +24,6 @@
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-        <option value="TypeScript File" />
-      </list>
-    </option>
   </component>
   <component name="Git.Rebase.Settings">
     <option name="NEW_BASE" value="origin/main" />
@@ -38,12 +38,12 @@
   }
 }</component>
   <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="230331f5-9774-42b9-b45f-28969ea29a60" />
+    <option name="defaultAccountId" value="d5dbf7b0-5054-49f7-9b5f-d8a207a3e240" />
   </component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/marstmu/groundstationV2&quot;,
-    &quot;accountId&quot;: &quot;230331f5-9774-42b9-b45f-28969ea29a60&quot;
+    &quot;accountId&quot;: &quot;d5dbf7b0-5054-49f7-9b5f-d8a207a3e240&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -57,33 +57,26 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;Django Server.groundStationV2.executor&quot;: &quot;Run&quot;,
+    &quot;Django Server.groundStationV2.executor&quot;: &quot;Debug&quot;,
     &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Kasper/PycharmProjects/groundstationV2/web/app&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Kasper/PycharmProjects/groundStationV2/server/djangoTest/settings.py&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;npm.dev.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Kasper\\PycharmProjects\\groundstationV2\\web\\node_modules\\typescript\\lib&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Kasper\\PycharmProjects\\groundStationV2\\web\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Kasper\PycharmProjects\groundstationV2\web\app" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Kasper\PycharmProjects\groundstationV2\web\app" />
-      <recent name="C:\Users\Kasper\PycharmProjects\groundstationV2\web" />
-      <recent name="C:\Users\Kasper\PycharmProjects\groundstationV2\server\station" />
-      <recent name="C:\Users\Kasper\PycharmProjects\groundstationV2\server" />
+      <recent name="C:\Users\Kasper\PycharmProjects\groundStationV2\web\public" />
     </key>
   </component>
   <component name="RunManager" selected="Django Server.groundStationV2">
@@ -94,10 +87,8 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="DJANGO_SETTINGS_MODULE" value="station.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.12 (groundstationV2)" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -123,10 +114,6 @@
       <envs />
       <method v="2" />
     </configuration>
-    <list>
-      <item itemvalue="Django Server.groundStationV2" />
-      <item itemvalue="npm.dev" />
-    </list>
     <recent_temporary>
       <list>
         <item itemvalue="npm.dev" />
@@ -136,8 +123,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PY-242.22855.92" />
-        <option value="bundled-python-sdk-b068d85d1acf-399fe30bd8c1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.22855.92" />
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-PY-242.21829.153" />
+        <option value="bundled-python-sdk-464836ebc622-b74155a9e76b-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.21829.153" />
       </set>
     </attachedChunks>
   </component>
@@ -152,11 +139,8 @@
       <workItem from="1726591544015" duration="92000" />
       <workItem from="1726592317754" duration="625000" />
       <workItem from="1726618407292" duration="6218000" />
-      <workItem from="1726793345568" duration="2204000" />
-      <workItem from="1726799557489" duration="189000" />
-      <workItem from="1726881215416" duration="142000" />
-      <workItem from="1726881363064" duration="18482000" />
-      <workItem from="1726973557097" duration="5276000" />
+      <workItem from="1726793345568" duration="2334000" />
+      <workItem from="1727109663112" duration="24733000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -166,13 +150,13 @@
       <option name="project" value="LOCAL" />
       <updated>1726793601218</updated>
     </task>
-    <task id="LOCAL-00002" summary="created ground station website, configured django for channels">
+    <task id="LOCAL-00002" summary="update">
       <option name="closed" value="true" />
-      <created>1726899741640</created>
+      <created>1726797710012</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1726899741640</updated>
+      <updated>1726797710012</updated>
     </task>
     <option name="localTasksCounter" value="3" />
     <servers />
@@ -193,7 +177,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update" />
-    <MESSAGE value="created ground station website, configured django for channels" />
-    <option name="LAST_COMMIT_MESSAGE" value="created ground station website, configured django for channels" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
 </project>
