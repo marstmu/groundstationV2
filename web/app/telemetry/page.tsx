@@ -7,6 +7,8 @@ import TextGauge from "@/app/components/text-gauge";
 import Window from "@/app/components/window";
 import {useEffect, useState} from "react";
 import {socket} from "@/app/components/socket"
+import ViewerFdai from "@/app/components/viewer-fdai";
+import Image from "next/image";
 
 
 export default function Telemetry() {
@@ -57,14 +59,15 @@ export default function Telemetry() {
         <div>
             <div className="flex flex-col min-h-dvh bg-gradient-to-b from-gray-900 to-black font-sans text-white">
                 <header className="px-2 sm:px-8 py-2 font-bold text-2xl">MARS Telemetry Terminal</header>
-                <div className="flex flex-col px-2 sm:px-8 sm:pb-8 min-h-full">
-                    <div className="mb-2 border-2 border-gray-800 relative flex justify-between rounded-lg p-2 col-span-full h-18 gap-2">
+                <div className="md:grow flex flex-col px-2 sm:px-8 sm:pb-8 min-h-full">
+                    <div className="mb-2 border-2 border-gray-800 relative flex justify-between rounded-lg p-2 col-span-full h-12 gap-2">
                         <div className="h-full flex justify-start gap-2">
-                            <TextGauge title="STATE" value="IN FLIGHT" valueClassName="text-green-500"/>
+                            {/*<TextGauge title="STATE" value="IN FLIGHT" valueClassName="text-green-500"/>*/}
+                            <p className="font-mono text-l sm:text-xl lg:text-2xl text-right text-green-500">IN FLIGHT</p>
                         </div>
                         <div className="h-full flex justify-end gap-2">
-                            <TextGauge title="SPD" value={speed}/>
-                            <TextGauge title="ALT" value="621 ft"/>
+                            <Image src={"icons/connection/" + (isConnected ? "on" : "off") + ".svg"} alt={"0"} width={28} height={28}/>
+                            <Image src={"icons/signal/no-signal.svg"} alt={"0"} width={28} height={28} color="red"/>
                         </div>
                     </div>
                     <div className="flex-1 grid grid-rows-3 grid-cols-1 sm:grid-rows-2 sm:grid-cols-2 lg:grid-rows-1 lg:grid-cols-5 flex-wrap gap-y-2 sm:gap-2 min-h-fit justify-stretch">
@@ -80,10 +83,13 @@ export default function Telemetry() {
                             </div>
                         </Window>
                         <Window title="GPS" className="row-start-2 sm:row-auto lg:col-span-3">
-                            <Viewer>
-                                <ViewerRocket quat={quaternion}/>
-                                <gridHelper args={[10, 10, 0x1f2937, 0x1f2937]}/>
-                            </Viewer>
+                            <div className="w-full h-full">
+                                <Viewer>
+                                    {/*<ViewerRocket quat={quaternion}/>*/}
+                                    <ViewerFdai quat={quaternion}/>
+                                    {/*<gridHelper args={[10, 10, 0x1f2937, 0x1f2937]}/>*/}
+                                </Viewer>
+                            </div>
                         </Window>
                         <div className="col-span-2 lg:col-span-1 grid grid-cols-2 lg:grid-cols-1 gap-2">
                             <Window title="Radio" className="flex-auto">

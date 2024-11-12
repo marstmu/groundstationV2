@@ -14,7 +14,7 @@ thread_lock = Lock()
 
 
 def read_from_serial():
-    with Serial(port='COM10', baudrate=9600, timeout=5) as ser:
+    with Serial(port='COM11', baudrate=9600, timeout=5) as ser:
         while True:
             data = ser.readline().decode().strip().split(',')
             print(data)
