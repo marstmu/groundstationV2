@@ -9,6 +9,14 @@ import {useEffect, useState} from "react";
 import {socket} from "@/app/components/socket"
 import ViewerFdai from "@/app/components/viewer-fdai";
 import Image from "next/image";
+import Connection from "@/app/components/icons/connection";
+import Signal from "@/app/components/icons/signal";
+import dynamic from "next/dynamic";
+
+const Cesium = dynamic(
+  () => import('@/app/components/cesium'),
+  { ssr: false }
+)
 
 
 export default function Telemetry() {
@@ -66,8 +74,8 @@ export default function Telemetry() {
                             <p className="font-mono text-l sm:text-xl lg:text-2xl text-right text-green-500">IN FLIGHT</p>
                         </div>
                         <div className="h-full flex justify-end gap-2">
-                            <Image src={"icons/connection/" + (isConnected ? "on" : "off") + ".svg"} alt={"0"} width={28} height={28}/>
-                            <Image src={"icons/signal/no-signal.svg"} alt={"0"} width={28} height={28} color="red"/>
+                            <Connection isConnected={false} size={28} title="Server Connection"/>
+                            <Signal strength={4} size={28}/>
                         </div>
                     </div>
                     <div className="flex-1 grid grid-rows-3 grid-cols-1 sm:grid-rows-2 sm:grid-cols-2 lg:grid-rows-1 lg:grid-cols-5 flex-wrap gap-y-2 sm:gap-2 min-h-fit justify-stretch">
@@ -83,13 +91,14 @@ export default function Telemetry() {
                             </div>
                         </Window>
                         <Window title="GPS" className="row-start-2 sm:row-auto lg:col-span-3">
-                            <div className="w-full h-full">
-                                <Viewer>
-                                    {/*<ViewerRocket quat={quaternion}/>*/}
-                                    <ViewerFdai quat={quaternion}/>
-                                    {/*<gridHelper args={[10, 10, 0x1f2937, 0x1f2937]}/>*/}
-                                </Viewer>
-                            </div>
+                            <Cesium/>
+                            {/*<div className="w-full h-full">*/}
+                            {/*    <Viewer>*/}
+                            {/*        /!*<ViewerRocket quat={quaternion}/>*!/*/}
+                            {/*        <ViewerFdai quat={quaternion}/>*/}
+                            {/*        /!*<gridHelper args={[10, 10, 0x1f2937, 0x1f2937]}/>*!/*/}
+                            {/*    </Viewer>*/}
+                            {/*</div>*/}
                         </Window>
                         <div className="col-span-2 lg:col-span-1 grid grid-cols-2 lg:grid-cols-1 gap-2">
                             <Window title="Radio" className="flex-auto">

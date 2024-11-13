@@ -4,25 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be9d774f-0220-4a2c-a792-d8c6c733a978" name="Changes" comment="created ground station website, configured django for channels">
-      <change afterPath="$PROJECT_DIR$/web/app/components/cesium.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/app/components/viewer-fdai.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/public/fd.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/public/fdai.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/public/icons/connection/off.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/public/icons/connection/on.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/public/icons/signal/0.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/public/icons/signal/1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/public/icons/signal/2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/public/icons/signal/3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/public/icons/signal/4.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/public/icons/signal/no-signal.svg" afterDir="false" />
+    <list default="true" id="be9d774f-0220-4a2c-a792-d8c6c733a978" name="Changes" comment="cesium component, fdai, top bar restructuring">
+      <change afterPath="$PROJECT_DIR$/web/app/components/icons/connection.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/components/icons/signal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/app/components/viewer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/components/viewer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/components/cesium.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/components/cesium.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/components/window.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/components/window.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/app/telemetry/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/telemetry/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/next.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/web/next.config.mjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/public/icons/connection/off.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/public/icons/connection/on.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/public/icons/signal/0.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/public/icons/signal/1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/public/icons/signal/2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/public/icons/signal/3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/public/icons/signal/4.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/public/icons/signal/no-signal.svg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +96,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/Kasper/PycharmProjects/groundstationV2/web/public",
+    "last_opened_file_path": "C:/Users/Kasper/PycharmProjects/groundstationV2/web/app/components/icons",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -109,6 +110,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Kasper\PycharmProjects\groundstationV2\web\app\components\icons" />
       <recent name="C:\Users\Kasper\PycharmProjects\groundstationV2\web\public" />
       <recent name="C:\Users\Kasper\PycharmProjects\groundstationV2\web\app\components" />
       <recent name="C:\Users\Kasper\PycharmProjects\groundstationV2\web\app" />
@@ -188,7 +190,8 @@
       <workItem from="1729054624182" duration="24000" />
       <workItem from="1730519066523" duration="31583000" />
       <workItem from="1731052474306" duration="14596000" />
-      <workItem from="1731387257129" duration="3456000" />
+      <workItem from="1731387257129" duration="3505000" />
+      <workItem from="1731468125296" duration="6577000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -214,7 +217,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730698268328</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="cesium component, fdai, top bar restructuring">
+      <option name="closed" value="true" />
+      <created>1731393304046</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1731393304046</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,7 +245,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update" />
     <MESSAGE value="created ground station website, configured django for channels" />
-    <option name="LAST_COMMIT_MESSAGE" value="created ground station website, configured django for channels" />
+    <MESSAGE value="cesium component, fdai, top bar restructuring" />
+    <option name="LAST_COMMIT_MESSAGE" value="cesium component, fdai, top bar restructuring" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/groundstationV2$serial_test.coverage" NAME="serial_test Coverage Results" MODIFIED="1730596611624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
