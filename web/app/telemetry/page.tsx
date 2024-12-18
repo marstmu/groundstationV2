@@ -20,7 +20,12 @@ export default function Telemetry() {
     const [transport, setTransport] = useState("N/A");
 
     const [speed, setSpeed] = useState("52 m/s");
-    const [mcuTemp, setMcuTemp] = useState(0);
+    const [long, setLong] = useState(0);
+    const [pres, setPres] = useState(0);
+    const [sat, setSat] = useState(0);
+    const [alt, setAlt] = useState(0);
+    const [lat, setLat] = useState(0);
+    const [rssi, setRssi] = useState(0);
     const [altitude, setAltitude] = useState(0);
     const [quaternion, setQuaternion] = useState([0,0,0,0]);
 
@@ -50,7 +55,12 @@ export default function Telemetry() {
         socket.on("telemetry_push", (value) => {
             setQuaternion(value.slice(0,4))
 
-            setMcuTemp(value[4]);
+            setLong(value[4]);
+            setLat(value[5]);
+            setAlt(value[6]);
+            setSat(value[7]);
+            setPres(value[8]);
+            setRssi(value[9]);
         });
 
         return () => {
@@ -78,12 +88,12 @@ export default function Telemetry() {
                         <Window title="Flight Data" className="">
                             <div className="grid grid-cols-3 lg:grid-cols-1 relative py-2 gap-x-2 gap-y-4 justify-center">
                                 <TextGauge id="SPD" title="SPD" value="52 m/s"/>
-                                <TextGauge title="ALT" value="621 ft"/>
-                                <TextGauge title="HDG" value="195°"/>
-                                <TextGauge title="FLT TIME" value="3.20s"/>
-                                <TextGauge title="AIR TEMP" value="16 °C"/>
-                                <TextGauge title="MCU TEMP" value={`${mcuTemp} °C`}/>
-                                <TextGauge title="BATT" value="4.1 V"/>
+                                <TextGauge title="PRES" value={`${pres} hPa`}/>
+                                <TextGauge title="SATS" value={`${sat}`}/>
+                                <TextGauge title="ALT" value={`${alt} m`}/>
+                                <TextGauge title="LAT" value={`${lat} °`}/>
+                                <TextGauge title="LONG" value={`${long} °`}/>
+                                <TextGauge title="RSSI" value={`${rssi} dB`}/>
                             </div>
                         </Window>
                         <Window title="GPS" className="row-start-2 sm:row-auto lg:col-span-3">
@@ -96,7 +106,7 @@ export default function Telemetry() {
                             </div>
                         </Window>
                         <div className="col-span-2 lg:col-span-1 grid grid-cols-2 lg:grid-cols-1 gap-2">
-                            <Window title="Radio" className="flex-auto">
+                            <Window title="Radio (not functional)" className="flex-auto">
                                 <div className="grid grid-cols-3 lg:grid-cols-1 relative py-2 gap-x-2 gap-y-4 justify-center">
                                     <BarGauge title="RSSI" value="1"/>
                                     <BarGauge title="SNR" value="1"/>
