@@ -20,7 +20,7 @@ function renderSwitch(x: number) {
 
 const Icon = (props: ComponentProps<any>) => {
     return (
-        <svg className={props.className} xmlns="http://www.w3.org/2000/svg" height={props.size} viewBox="0 -960 960 960" width={props.size} fill={props.strength === 0 ? "#ef4444" : "#6b7280"}>
+        <svg className={props.className} xmlns="http://www.w3.org/2000/svg" height={props.size} viewBox="0 -960 960 960" width={props.size} fill={props.strength === 0 ? "#ef4444" : "#ffffff"}>
             {renderSwitch(props.strength)}
         </svg>
     )

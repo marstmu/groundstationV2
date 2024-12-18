@@ -12,11 +12,7 @@ import Image from "next/image";
 import Connection from "@/app/components/icons/connection";
 import Signal from "@/app/components/icons/signal";
 import dynamic from "next/dynamic";
-
-const Cesium = dynamic(
-  () => import('@/app/components/cesium'),
-  { ssr: false }
-)
+import Message from "@/app/components/message";
 
 
 export default function Telemetry() {
@@ -74,8 +70,8 @@ export default function Telemetry() {
                             <p className="font-mono text-l sm:text-xl lg:text-2xl text-right text-green-500">IN FLIGHT</p>
                         </div>
                         <div className="h-full flex justify-end gap-2">
-                            <Connection isConnected={false} size={28} title="Server Connection"/>
-                            <Signal strength={4} size={28}/>
+                            <Connection isConnected={isConnected} size={28} title="Server Connection"/>
+                            <Signal strength={isConnected ? 4 : 0} size={28}/>
                         </div>
                     </div>
                     <div className="flex-1 grid grid-rows-3 grid-cols-1 sm:grid-rows-2 sm:grid-cols-2 lg:grid-rows-1 lg:grid-cols-5 flex-wrap gap-y-2 sm:gap-2 min-h-fit justify-stretch">
@@ -91,20 +87,30 @@ export default function Telemetry() {
                             </div>
                         </Window>
                         <Window title="GPS" className="row-start-2 sm:row-auto lg:col-span-3">
-                            <Cesium/>
-                            {/*<div className="w-full h-full">*/}
-                            {/*    <Viewer>*/}
-                            {/*        /!*<ViewerRocket quat={quaternion}/>*!/*/}
-                            {/*        <ViewerFdai quat={quaternion}/>*/}
-                            {/*        /!*<gridHelper args={[10, 10, 0x1f2937, 0x1f2937]}/>*!/*/}
-                            {/*    </Viewer>*/}
-                            {/*</div>*/}
+                            <div className="w-full h-full">
+                                <Viewer>
+                                    {/*<ViewerRocket quat={quaternion}/>*/}
+                                    <ViewerFdai quat={quaternion}/>
+                                    {/*<gridHelper args={[10, 10, 0x1f2937, 0x1f2937]}/>*/}
+                                </Viewer>
+                            </div>
                         </Window>
                         <div className="col-span-2 lg:col-span-1 grid grid-cols-2 lg:grid-cols-1 gap-2">
                             <Window title="Radio" className="flex-auto">
-                                <BarGauge title="RSSI" value="1"/>
+                                <div className="grid grid-cols-3 lg:grid-cols-1 relative py-2 gap-x-2 gap-y-4 justify-center">
+                                    <BarGauge title="RSSI" value="1"/>
+                                    <BarGauge title="SNR" value="1"/>
+                                    <BarGauge title="LINK BDGT." value="1"/>
+                                </div>
                             </Window>
-                            <Window title="Advisory" className="backdrop-blur sm:backdrop-blur-0 sm:bg-transparent flex-auto"/>
+                            <Window title="Advisory"
+                                    className="backdrop-blur sm:backdrop-blur-0 sm:bg-transparent flex-auto">
+                                <div className="flex flex-col">
+                                    <Message severity="" text="sigma"/>
+                                    <Message severity="caution" text="the"/>
+                                    <Message severity="warning" text="what"/>
+                                </div>
+                            </Window>
                         </div>
                     </div>
                 </div>
